@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("melanotan2-theme");if(_t==="light"||_t==="dark"
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#fbbf24; --sky-deep:#9a3412;
-  --teal:#fbbf24; --teal-deep:#431407;
-  --org:#9a3412; --org-deep:#431407;
-  --amber:#ffdb3f; --rose:#ffb15d; --cyan:#fbbf24;
+  --sky:#f43f5e; --sky-deep:#b80b28;
+  --teal:#f43f5e; --teal-deep:#b80b28;
+  --org:#4ade80; --org-deep:#1c9b4b;
+  --amber:#f43f5e; --rose:#4ade80; --cyan:#f43f5e;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#fbbf24 5%,#9a3412 50%,#fbbf24 95%);
+  --grad:linear-gradient(100deg,#f9264a 5%,#129a44 50%,#f9264a 95%);
   --ongrad:#0a0c14;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(154, 52, 18,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(67, 20, 7,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(67, 20, 7,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(251, 191, 36,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(18,154,68,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(67,7,17,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(67,7,17,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(249,38,74,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(154, 52, 18,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(67, 20, 7,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(67, 20, 7,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(18,154,68,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(67,7,17,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(67,7,17,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#9a3412; --sky-deep:#431407;
-  --teal:#431407; --teal-deep:#431407;
-  --org:#9a3412; --org-deep:#431407;
-  --amber:#8c400f; --rose:#e76b07; --cyan:#431407;
+  --sky:#c80526; --sky-deep:#5b0211;
+  --teal:#18aa4d; --teal-deep:#0a4820;
+  --org:#c80526; --org-deep:#5b0211;
+  --amber:#c80526; --rose:#18aa4d; --cyan:#18aa4d;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#9a3412,#431407,#9a3412);
+  --grad:linear-gradient(100deg,#9a1229,#07431d,#9a1229);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,12 +129,12 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(255, 219, 63,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255, 219, 63,.55)}70%{box-shadow:0 0 0 12px rgba(255, 219, 63,0)}100%{box-shadow:0 0 0 0 rgba(255, 219, 63,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(250,68,99,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(250,68,99,.55)}70%{box-shadow:0 0 0 12px rgba(250,68,99,0)}100%{box-shadow:0 0 0 0 rgba(250,68,99,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -187,11 +187,11 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
-.kv .k.o{background:rgba(240, 120, 37,.12);color:var(--org);border:1px solid rgba(240, 120, 37,.35)}
-.kv .k.a{background:rgba(255, 219, 63,.12);color:var(--amber);border:1px solid rgba(255, 219, 63,.35)}
-.kv .k.g{background:rgba(255, 177, 93,.12);color:var(--rose);border:1px solid rgba(255, 177, 93,.35)}
+.kv .k.o{background:rgba(37,240,111,.12);color:var(--org);border:1px solid rgba(37,240,111,.35)}
+.kv .k.a{background:rgba(250,68,99,.12);color:var(--amber);border:1px solid rgba(250,68,99,.35)}
+.kv .k.g{background:rgba(97,251,153,.12);color:var(--rose);border:1px solid rgba(97,251,153,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(192, 72, 20,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(20,192,83,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -215,7 +215,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(255, 219, 63,.4);background:rgba(255, 219, 63,.08);
+  color:var(--amber);border:1px solid rgba(250,68,99,.4);background:rgba(250,68,99,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -226,12 +226,40 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ulegend{display:flex;align-items:center;gap:.75rem;margin:0 0 1.5rem;padding:.85rem 1.15rem;border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.03);color:var(--muted);font-size:.93rem}
 .ulegend strong{color:var(--ink)}
 @media (prefers-reduced-motion:reduce){.udot::after{animation:none;opacity:.35;transform:scale(.8)}}
+/* ---------- evidence-tier system (benefits chapter) ---------- */
+.tier{margin:0 0 1.4rem;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;position:relative;overflow:hidden}
+.tier.est{border-color:rgba(249,38,74,.45)}
+.tier.est::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,#129a44,#f9264a)}
+.tier.pred{border:1px dashed rgba(95,224,142,.55);background:rgba(18,154,68,.07)}
+.tier.com{border-color:rgba(250,68,99,.35);background:rgba(250,68,99,.04)}
+.tier h3{font-family:var(--disp);font-size:1.3rem;font-weight:800;margin:.4rem 0 .7rem;letter-spacing:-.01em}
+.tier p{color:var(--muted);font-size:.99rem}
+.tier ul{list-style:none;display:grid;gap:.7rem;margin-top:.9rem}
+.tier ul li{padding-left:1.5rem;position:relative;color:var(--muted);font-size:.99rem}
+.tier ul li::before{content:"▸";position:absolute;left:0;font-weight:800;color:var(--sky)}
+.tier.com ul li::before{color:var(--amber)}
+.tier strong{color:var(--ink)}
+.tbadge{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:.38rem .75rem;border-radius:8px}
+.tbadge.est{background:rgba(249,38,74,.14);color:var(--sky);border:1px solid rgba(249,38,74,.5)}
+.tbadge.pred{background:rgba(18,154,68,.16);color:#6be899;border:1px dashed rgba(95,224,142,.55)}
+.tbadge.com{background:rgba(250,68,99,.10);color:var(--amber);border:1px solid rgba(250,68,99,.42)}
+/* ---------- layman example tiles (theme dot, distinct from amber anecdote dot) ---------- */
+.layman{margin-top:1.1rem;background:rgba(15,248,100,.055);border:1px dashed rgba(15,248,100,.42);border-radius:12px;padding:.95rem 1.15rem;font-size:.96rem;color:var(--muted);display:flex;gap:.85rem;align-items:flex-start}
+.layman strong{color:var(--ink)}
+.ldot{display:inline-block;width:11px;height:11px;border-radius:50%;background:#0ff864;flex:0 0 auto;position:relative;margin-top:.42rem}
+.ldot::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid #0ff864;animation:ldotPulse 2.4s ease-out infinite}
+@keyframes ldotPulse{0%{transform:scale(.55);opacity:.9}70%{opacity:.25}100%{transform:scale(1.25);opacity:0}}
+@media (prefers-reduced-motion:reduce){.ldot::after{animation:none;opacity:.35;transform:scale(.8)}}
+/* ---------- fit / caution tiles ---------- */
+.fittile .fhead{display:flex;align-items:center;gap:.7rem;margin-bottom:.6rem}
+.fittile .fico{font-size:1.5rem;line-height:1}
+.fittile h3{font-family:var(--disp);font-size:1.28rem;font-weight:800;letter-spacing:-.01em;margin:0}
 .anec-head .thumb{flex:0 0 auto;width:54px;height:54px;border-radius:14px;border:1px solid var(--line)}
 .anec-head h4{margin-bottom:0}
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(255, 219, 63,.06);border:1px solid rgba(255, 219, 63,.3);border-radius:var(--radius);
+.folk-note{background:rgba(250,68,99,.06);border:1px solid rgba(250,68,99,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -242,9 +270,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(255, 219, 63,.1);color:var(--amber);border:1px solid rgba(255, 219, 63,.4)}
-.lvl-theory .level{background:rgba(240, 120, 37,.1);color:var(--org);border:1px solid rgba(240, 120, 37,.4)}
-.lvl-unknown .level{background:rgba(255, 177, 93,.1);color:var(--rose);border:1px solid rgba(255, 177, 93,.4)}
+.lvl-known .level{background:rgba(250,68,99,.1);color:var(--amber);border:1px solid rgba(250,68,99,.4)}
+.lvl-theory .level{background:rgba(37,240,111,.1);color:var(--org);border:1px solid rgba(37,240,111,.4)}
+.lvl-unknown .level{background:rgba(97,251,153,.1);color:var(--rose);border:1px solid rgba(97,251,153,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -265,10 +293,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -281,7 +308,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(255, 177, 93,.05);border:1px solid rgba(255, 177, 93,.3);border-radius:var(--radius);
+.limits{background:rgba(97,251,153,.05);border:1px solid rgba(97,251,153,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -348,7 +375,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fbbf24), var(--mpc2, #fbbf24)) border-box;
+    linear-gradient(135deg, var(--mpc1, #f9264a), var(--mpc2, #f9264a)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -360,11 +387,11 @@ mini-poll { display: block; }
   color: var(--muted, #a9b1c9); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #ffdb3f); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fa4463); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fbbf24);
-  box-shadow: 0 0 10px var(--mpc1, #fbbf24);
+  background: var(--mpc1, #f9264a);
+  box-shadow: 0 0 10px var(--mpc1, #f9264a);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -398,7 +425,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fbbf24), var(--acc2, #fbbf24), var(--acc3, #9a3412));
+  background: linear-gradient(100deg, var(--acc1, #f9264a), var(--acc2, #f9264a), var(--acc3, #129a44));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -419,23 +446,23 @@ mini-poll { display: block; }
   background: rgba(255,255,255,.03); color: var(--ink, #edf0f9);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #ffdb3f); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #ffdb3f); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #ffdb3f); background: rgba(255, 219, 63,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #fa4463); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #fa4463); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #fa4463); background: rgba(250,68,99,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fbbf24), var(--acc2, #fbbf24));
+  background: linear-gradient(100deg, var(--acc1, #f9264a), var(--acc2, #f9264a));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #ffdb3f;
-  border: 1px dashed rgba(255, 219, 63,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #fa4463;
+  border: 1px dashed rgba(250,68,99,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
@@ -443,17 +470,17 @@ mini-poll { display: block; }
   font-size: .9rem; color: var(--ink, #edf0f9); margin-bottom: .28rem;
 }
 .mpoll-pct { font-weight: 800; color: var(--muted, #a9b1c9); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #ffdb3f); font-weight: 700; font-size: .8rem; }
+.mpoll-mine { color: var(--amber, #fa4463); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fbbf24), var(--acc2, #fbbf24), var(--acc3, #9a3412));
+  background: linear-gradient(90deg, var(--acc1, #f9264a), var(--acc2, #f9264a), var(--acc3, #129a44));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(255, 219, 63,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(250,68,99,.45); }
 .mpoll-total {
   margin-top: .8rem; font-size: .85rem; color: var(--faint, #7f88a5);
 }
@@ -477,13 +504,19 @@ mini-poll { display: block; }
   .mpoll-q { font-size: 1.02rem; }
 }
 
+.dsub{margin:2.2rem 0 1rem;font-size:1.12rem;font-weight:800;color:var(--ink);letter-spacing:.01em}
+.dsub .k{color:var(--sky)}
+.ratehead{text-align:center;margin:2.4rem 0 .8rem}
+.ratehead h3{font-size:1.55rem;margin:0 0 .4rem}
+.ratehead p{color:var(--muted);margin:0}
+.dsub:first-child{margin-top:0}
 </style>
 </head>
 <body>
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fbbf24"/><stop offset="50%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#9a3412"/>
+      <stop offset="0%" stop-color="#f9264a"/><stop offset="50%" stop-color="#f9264a"/><stop offset="100%" stop-color="#129a44"/>
     </linearGradient>
   </defs>
 </svg>
@@ -491,7 +524,7 @@ mini-poll { display: block; }
 <svg id="dots" aria-hidden="true"></svg>
 <div class="orb o1" aria-hidden="true"></div><div class="orb o2" aria-hidden="true"></div><div class="orb o3" aria-hidden="true"></div>
 <canvas id="confetti" aria-hidden="true"></canvas>
-<div id="doneToast" role="status">You made it through the triple agonist 🎉</div>
+<div id="doneToast" role="status">You made it through the tanning peptide 🎉</div>
 <div id="progress" aria-hidden="true"></div>
 <div id="themeToggle" role="group" aria-label="Color theme">
   <button type="button" class="tt-opt" data-mode="light" aria-pressed="false">
@@ -508,16 +541,18 @@ mini-poll { display: block; }
   <a href="#ch2"><span class="n">02</span>Desert Science</a>
   <a href="#ch3"><span class="n">03</span>How It Works</a>
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
-  <a href="#ch5"><span class="n">05</span>MT2 vs MT1</a>
-  <a href="#ch6"><span class="n">06</span>What People Say</a>
-  <a href="#ch7"><span class="n">07</span>Risks & Unknowns</a>
-  <a href="#ch8"><span class="n">08</span>Glossary</a>
-  <a href="#ch9"><span class="n">09</span>Takeaways</a>
+  <a href="#ch5"><span class="n">05</span>MT2 vs the field</a>
+  <a href="#ch6"><span class="n">06</span>Potential Benefits</a>
+  <a href="#ch7"><span class="n">07</span>Fit & Caution</a>
+  <a href="#ch8"><span class="n">08</span>Community reports</a>
+  <a href="#ch9"><span class="n">09</span>Risks & Unknowns</a>
+  <a href="#ch10"><span class="n">10</span>Glossary</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
 <nav class="chapters" aria-label="Chapters"><div class="rail" id="rail">
-  <a href="#ch1">01 · Tanning peptide</a><a href="#ch2">02 · Desert science</a><a href="#ch3">03 · How it works</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · MT2 vs MT1</a><a href="#ch6">06 · Reports</a><a href="#ch7">07 · Risks</a><a href="#ch8">08 · Glossary</a><a href="#ch9">09 · Takeaways</a>
+  <a href="#ch1">01 · Tanning peptide</a><a href="#ch2">02 · Desert science</a><a href="#ch3">03 · How it works</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · MT2 vs the field</a><a href="#ch6">06 · Benefits</a><a href="#ch7">07 · Fit & caution</a><a href="#ch8">08 · Community reports</a><a href="#ch9">09 · Risks</a><a href="#ch10">10 · Glossary</a><a href="#ch11">11 · Takeaways</a>
 </div></nav>
 
 <header class="hero">
@@ -544,20 +579,20 @@ mini-poll { display: block; }
   <h2>What <span class="hl">Melanotan 2</span> actually is</h2>
   <p class="lede">Melanotan 2 is a synthetic <strong>cyclic peptide</strong> that switches on melanocortin receptors across the body — the same receptor family behind skin pigment, appetite, and sexual arousal. It tans skin without sun. It has <strong>never been approved</strong> as a medicine anywhere, and everything sold as MT2 is an unregulated research chemical.</p>
   <div class="diagram reveal">
-    <svg viewBox="0 0 640 248" role="img" aria-label="Seven amino acids in a ring: Melanotan 2's compact cyclic structure">
+    <svg viewBox="0 0 640 262" role="img" aria-label="Seven amino acids in a ring: Melanotan 2's compact cyclic structure">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">MELANOTAN 2 · 7 AMINO ACIDS · CYCLIC PEPTIDE</text>
       <g>
-        <circle cx="320.0" cy="23.0" r="11" fill="#151b36" stroke="#9a3412" stroke-width="3"/>
-        <circle cx="394.3" cy="58.8" r="11" fill="#151b36" stroke="#9a3412" stroke-width="3"/>
-        <circle cx="412.6" cy="139.1" r="11" fill="#151b36" stroke="#9a3412" stroke-width="3"/>
-        <circle cx="361.2" cy="203.6" r="11" fill="#151b36" stroke="#9a3412" stroke-width="3"/>
-        <circle cx="278.8" cy="203.6" r="11" fill="#151b36" stroke="#9a3412" stroke-width="3"/>
-        <circle cx="227.4" cy="139.1" r="11" fill="#151b36" stroke="#9a3412" stroke-width="3"/>
-        <circle cx="245.7" cy="58.8" r="11" fill="#151b36" stroke="#9a3412" stroke-width="3"/>
+        <circle cx="320.0" cy="43.0" r="11" fill="#151b36" stroke="#129a44" stroke-width="3"/>
+        <circle cx="394.3" cy="78.8" r="11" fill="#151b36" stroke="#129a44" stroke-width="3"/>
+        <circle cx="412.6" cy="159.1" r="11" fill="#151b36" stroke="#129a44" stroke-width="3"/>
+        <circle cx="361.2" cy="223.6" r="11" fill="#151b36" stroke="#129a44" stroke-width="3"/>
+        <circle cx="278.8" cy="223.6" r="11" fill="#151b36" stroke="#129a44" stroke-width="3"/>
+        <circle cx="227.4" cy="159.1" r="11" fill="#151b36" stroke="#129a44" stroke-width="3"/>
+        <circle cx="245.7" cy="78.8" r="11" fill="#151b36" stroke="#129a44" stroke-width="3"/>
       </g>
-      <circle cx="320" cy="118" r="30" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6 5" class="flow"/>
-      <text x="320" y="122" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">7 aa</text>
-      <text x="320" y="232" fill="#7f88a5" font-size="12" text-anchor="middle">non-selective melanocortin agonist · MC1R / MC3R / MC4R / MC5R</text>
+      <circle cx="320" cy="138" r="30" fill="none" stroke="#f9264a" stroke-width="2" stroke-dasharray="6 5" class="flow"/>
+      <text x="320" y="142" fill="#f9264a" font-size="14" font-weight="800" text-anchor="middle">7 aa</text>
+      <text x="320" y="246" fill="#7f88a5" font-size="12" text-anchor="middle">non-selective melanocortin agonist · MC1R / MC3R / MC4R / MC5R</text>
 
     </svg>
     <div class="cap">A ring of seven amino acids — small, stable, and promiscuous: it hits four different melanocortin receptors.</div>
@@ -581,27 +616,27 @@ mini-poll { display: block; }
     <svg viewBox="0 0 640 210" role="img" aria-label="Timeline from 1980s melanocortin research to Melanotan 2's gray-market afterlife">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">FROM SKIN-CANCER IDEA TO GRAY MARKET</text>
       <line x1="60" y1="110" x2="580" y2="110" stroke="#3a4160" stroke-width="3"/>
-      <line x1="60" y1="110" x2="580" y2="110" stroke="#fbbf24" stroke-width="3" class="flowseq" opacity=".8"/>
-      <circle cx="90" cy="110" r="26" fill="none" stroke="#9a3412" stroke-width="2" class="ringp"/>
-      <circle cx="90" cy="110" r="10" fill="#9a3412"/>
-      <text x="90" y="72" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">1980s</text>
+      <line x1="60" y1="110" x2="580" y2="110" stroke="#f9264a" stroke-width="3" class="flowseq" opacity=".8"/>
+      <circle cx="90" cy="110" r="26" fill="none" stroke="#129a44" stroke-width="2" class="ringp"/>
+      <circle cx="90" cy="110" r="10" fill="#129a44"/>
+      <text x="90" y="72" fill="#f9264a" font-size="14" font-weight="800" text-anchor="middle">1980s</text>
       <text x="90" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">The hypothesis</text>
-      <text x="90" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">α-MSH analogs could tan without sun</text>
-      <circle cx="243" cy="110" r="26" fill="none" stroke="#9a3412" stroke-width="2" class="ringp"/>
-      <circle cx="243" cy="110" r="10" fill="#9a3412"/>
-      <text x="243" y="72" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">1990s</text>
+      <text x="90" y="176" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">α-MSH analogs</text><text x="90" y="190" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">tan without sun</text>
+      <circle cx="243" cy="110" r="26" fill="none" stroke="#129a44" stroke-width="2" class="ringp"/>
+      <circle cx="243" cy="110" r="10" fill="#129a44"/>
+      <text x="243" y="72" fill="#f9264a" font-size="14" font-weight="800" text-anchor="middle">1990s</text>
       <text x="243" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">MT1 then MT2</text>
-      <text x="243" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">shorter, stronger cyclic version made</text>
-      <circle cx="397" cy="110" r="26" fill="none" stroke="#9a3412" stroke-width="2" class="ringp"/>
-      <circle cx="397" cy="110" r="10" fill="#9a3412"/>
-      <text x="397" y="72" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">2000s</text>
+      <text x="243" y="176" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">shorter, stronger</text><text x="243" y="190" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">cyclic version</text>
+      <circle cx="397" cy="110" r="26" fill="none" stroke="#129a44" stroke-width="2" class="ringp"/>
+      <circle cx="397" cy="110" r="10" fill="#129a44"/>
+      <text x="397" y="72" fill="#f9264a" font-size="14" font-weight="800" text-anchor="middle">2000s</text>
       <text x="397" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">Trials stall</text>
-      <text x="397" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">side effects end pharma interest</text>
-      <circle cx="550" cy="110" r="26" fill="none" stroke="#9a3412" stroke-width="2" class="ringp"/>
-      <circle cx="550" cy="110" r="10" fill="#9a3412"/>
-      <text x="550" y="72" fill="#fbbf24" font-size="14" font-weight="800" text-anchor="middle">2010s+</text>
+      <text x="397" y="176" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">side effects end</text><text x="397" y="190" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">pharma interest</text>
+      <circle cx="550" cy="110" r="26" fill="none" stroke="#129a44" stroke-width="2" class="ringp"/>
+      <circle cx="550" cy="110" r="10" fill="#129a44"/>
+      <text x="550" y="72" fill="#f9264a" font-size="14" font-weight="800" text-anchor="middle">2010s+</text>
       <text x="550" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">Gray market</text>
-      <text x="550" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">sold online as research chemical</text>
+      <text x="550" y="176" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">sold online as</text><text x="550" y="190" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">research chemical</text>
 
     </svg>
     <div class="cap">A skin-cancer prevention idea became an unregulated tanning drug sold on the internet.</div>
@@ -622,20 +657,20 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 240" role="img" aria-label="Four-step mechanism: dosing, pigment receptor activation, tanning, and off-target spillover">
       <g text-anchor="middle">
-        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fbbf24" stroke-width="2"/>
-        <text x="84" y="105" fill="#fbbf24" font-size="13" font-weight="800">1 · DOSE</text>
+        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#f9264a" stroke-width="2"/>
+        <text x="84" y="105" fill="#f9264a" font-size="13" font-weight="800">1 · DOSE</text>
         <text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Peptide enters</text>
         <text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">the bloodstream</text>
-        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#9a3412" stroke-width="2"/>
-        <text x="236" y="105" fill="#9a3412" font-size="13" font-weight="800">2 · PIGMENT</text>
+        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+        <text x="236" y="105" fill="#129a44" font-size="13" font-weight="800">2 · PIGMENT</text>
         <text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">MC1R on melanocytes</text>
         <text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">switches on</text>
-        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fbbf24" stroke-width="2"/>
-        <text x="388" y="105" fill="#fbbf24" font-size="13" font-weight="800">3 · TAN</text>
+        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#f9264a" stroke-width="2"/>
+        <text x="388" y="105" fill="#f9264a" font-size="13" font-weight="800">3 · TAN</text>
         <text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Melanin production</text>
         <text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">ramps up, UV-free</text>
-        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#9a3412" stroke-width="2"/>
-        <text x="540" y="105" fill="#9a3412" font-size="13" font-weight="800">4 · SPILL</text>
+        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+        <text x="540" y="105" fill="#129a44" font-size="13" font-weight="800">4 · SPILL</text>
         <text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Other receptors fire:</text>
         <text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">gut, brain, vessels</text>
       </g>
@@ -646,10 +681,198 @@ mini-poll { display: block; }
     </svg>
     <div class="cap">The tanning chain is real — step 4 is where the side-effect list comes from.</div>
   </div>
-<div class="ebar"><div class="row"><span class="t">Tanning effect</span><span class="v">demonstrated</span></div><div class="track"><div class="fill" style="--w:80%;background:linear-gradient(90deg,#fbbf24,#9a3412)"></div></div><div class="note">Small human studies showed real pigmentation increases — the one effect nobody disputes.</div></div>
-<div class="ebar"><div class="row"><span class="t">Appetite suppression</span><span class="v">real but rough</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#9a3412,#fbbf24)"></div></div><div class="note">MC4R activation genuinely curbs hunger; nausea does most of the heavy lifting.</div></div>
-<div class="ebar"><div class="row"><span class="t">Sexual effects</span><span class="v">documented</span></div><div class="track"><div class="fill" style="--w:65%;background:linear-gradient(90deg,#431407,#9a3412)"></div></div><div class="note">Erections were the famous surprise; priapism (prolonged erection) appears in case reports.</div></div>
+<div class="ebar"><div class="row"><span class="t">Tanning effect</span><span class="v">demonstrated</span></div><div class="track"><div class="fill" style="--w:80%;background:linear-gradient(90deg,#f9264a,#129a44)"></div></div><div class="note">Small human studies showed real pigmentation increases — the one effect nobody disputes.</div></div>
+<div class="ebar"><div class="row"><span class="t">Appetite suppression</span><span class="v">real but rough</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#129a44,#f9264a)"></div></div><div class="note">MC4R activation genuinely curbs hunger; nausea does most of the heavy lifting.</div></div>
+<div class="ebar"><div class="row"><span class="t">Sexual effects</span><span class="v">documented</span></div><div class="track"><div class="fill" style="--w:65%;background:linear-gradient(90deg,#430711,#129a44)"></div></div><div class="note">Erections were the famous surprise; priapism (prolonged erection) appears in case reports.</div></div>
 <div class="ebar"><div class="row"><span class="t">Long-term safety</span><span class="v">essentially unstudied</span></div><div class="track"><div class="fill" style="--w:8%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No long-term trials exist. Mole changes are the visible worry; the invisible ones are unknown.</div></div>
+<div class="dsub reveal"><span class="k">▸</span> The melanocortin switchboard</div>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 280" role="img" aria-label="Melanotan 2 activating four melanocortin receptors on a cell membrane">
+<text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">MT2 · THE MELANOCORTIN SWITCHBOARD</text>
+<circle r="9" fill="#f9264a"><animateMotion dur="5s" repeatCount="indefinite" path="M90 58 Q100 95 110 126"/></circle>
+<circle r="4" fill="#ffffff"><animateMotion dur="5s" repeatCount="indefinite" path="M90 58 Q100 95 110 126"/></circle>
+<circle r="9" fill="#f9264a" opacity=".7"><animateMotion dur="5s" begin="2.5s" repeatCount="indefinite" path="M90 58 Q240 80 390 126"/></circle>
+<text x="90" y="44" fill="#f9264a" font-size="12" font-weight="800" text-anchor="middle">MT2</text>
+<g fill="none" stroke-width="2.5" stroke-linecap="round">
+<path d="M110 168 V140 M110 140 L98 122 M110 140 L122 122" stroke="#f9264a"/>
+<path d="M250 168 V140 M250 140 L238 122 M250 140 L262 122" stroke="#7f88a5"/>
+<path d="M390 168 V140 M390 140 L378 122 M390 140 L402 122" stroke="#7f88a5"/>
+<path d="M530 168 V140 M530 140 L518 122 M530 140 L542 122" stroke="#7f88a5"/>
+</g>
+<text x="110" y="106" fill="#f9264a" font-size="12" font-weight="800" text-anchor="middle">MC1R</text>
+<text x="250" y="106" fill="#7f88a5" font-size="12" font-weight="800" text-anchor="middle">MC3R</text>
+<text x="390" y="106" fill="#7f88a5" font-size="12" font-weight="800" text-anchor="middle">MC4R</text>
+<text x="530" y="106" fill="#7f88a5" font-size="12" font-weight="800" text-anchor="middle">MC5R</text>
+<circle cx="110" cy="126" r="14" fill="none" stroke="#f9264a" stroke-width="2" class="ringp"/>
+<circle cx="390" cy="126" r="14" fill="none" stroke="#f9264a" stroke-width="2" class="ringp" style="animation-delay:2.5s"/>
+<text x="40" y="162" fill="#7f88a5" font-size="10" font-weight="600">cell membrane</text>
+<line x1="40" y1="170" x2="600" y2="170" stroke="#3a4160" stroke-width="5"/>
+<line x1="40" y1="183" x2="600" y2="183" stroke="#2b2f4a" stroke-width="5"/>
+<g stroke="#f9264a" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6"><path d="M110 190 V206"/><path d="M390 190 V206"/></g>
+<text x="110" y="230" fill="#f9264a" font-size="11" font-weight="700" text-anchor="middle">skin pigment</text>
+<text x="250" y="230" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">energy balance</text>
+<text x="390" y="230" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">appetite · arousal</text>
+<text x="530" y="230" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">skin glands</text>
+<text x="320" y="264" fill="#7f88a5" font-size="12" text-anchor="middle">One molecule, four switches — the tan and the side effects share a cause.</text>
+</svg>
+<div class="cap">MT2 docks wherever a melanocortin receptor sits — skin, brain, gut. Selectivity was never part of the design.</div>
+</div>
+<div class="bridge reveal" style="margin:1rem 0 0;color:var(--muted);font-size:.95rem"><strong style="color:var(--ink)">The pigment receptor is only the beginning.</strong> MC1R on melanocytes makes the tan. But the same molecule also flips MC4R in the brain (appetite, arousal) and MC3R/MC5R elsewhere — which is why the effect list reads like four different drugs.</div>
+<div class="dsub reveal"><span class="k">▸</span> Receptor → tan, step by step</div>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 270" role="img" aria-label="Four step sequence from receptor activation to darker skin">
+<g font-size="12" font-weight="800" text-anchor="middle">
+<rect x="20" y="40" width="135" height="170" rx="14" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+<text x="87" y="64" fill="#f9264a">1 · RECEPTOR ON</text>
+<path d="M87 152 V128 M87 128 L77 114 M87 128 L97 114" stroke="#f9264a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<circle cx="87" cy="100" r="7" fill="#f9264a"/>
+<circle cx="87" cy="100" r="11" fill="none" stroke="#f9264a" stroke-width="2" class="ringp"/>
+<text x="87" y="184" fill="#a9b1c9" font-size="10" font-weight="600">MT2 docks</text>
+<text x="87" y="198" fill="#a9b1c9" font-size="10" font-weight="600">MC1R</text>
+<rect x="175" y="40" width="135" height="170" rx="14" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+<text x="242" y="64" fill="#f9264a">2 · CELL WAKES</text>
+<circle cx="242" cy="132" r="30" fill="none" stroke="#f9264a" stroke-width="2"/>
+<circle cx="242" cy="132" r="9" fill="#f9264a" class="glow-pulse"/>
+<text x="242" y="184" fill="#a9b1c9" font-size="10" font-weight="600">melanocyte</text>
+<text x="242" y="198" fill="#a9b1c9" font-size="10" font-weight="600">wakes up</text>
+<rect x="330" y="40" width="135" height="170" rx="14" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+<text x="397" y="64" fill="#f9264a">3 · MELANIN MADE</text>
+<circle cx="378" cy="118" r="6" fill="#129a44" stroke="#f9264a" stroke-width="1.5" class="seqr1"/>
+<circle cx="404" cy="138" r="6" fill="#129a44" stroke="#f9264a" stroke-width="1.5" class="seqr2"/>
+<circle cx="390" cy="160" r="6" fill="#129a44" stroke="#f9264a" stroke-width="1.5" class="seqr3"/>
+<circle cx="414" cy="120" r="5" fill="#129a44" stroke="#f9264a" stroke-width="1.5"/>
+<text x="397" y="184" fill="#a9b1c9" font-size="10" font-weight="600">melanin granules</text>
+<text x="397" y="198" fill="#a9b1c9" font-size="10" font-weight="600">multiply</text>
+<rect x="485" y="40" width="135" height="170" rx="14" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+<text x="552" y="64" fill="#f9264a">4 · SKIN DARKENS</text>
+<rect x="508" y="108" width="26" height="46" rx="6" fill="#9ee8b9"/>
+<rect x="548" y="108" width="26" height="46" rx="6" fill="#267c45"/>
+<line x1="536" y1="131" x2="546" y2="131" stroke="#f9264a" stroke-width="2"/>
+<path d="M546 127 l8 4 l-8 4 z" fill="#f9264a"/>
+<text x="552" y="184" fill="#a9b1c9" font-size="10" font-weight="600">pigment</text>
+<text x="552" y="198" fill="#a9b1c9" font-size="10" font-weight="600">builds up</text>
+</g>
+<g stroke="#7f88a5" stroke-width="2" fill="none" stroke-dasharray="6 6">
+<path d="M157 125 h16" class="flowseq"/><path d="M312 125 h16" class="flowseq2"/><path d="M467 125 h16" class="flowseq3"/>
+</g>
+<text x="320" y="248" fill="#7f88a5" font-size="12" text-anchor="middle">Each step is real pharmacology — this is the part of MT2 that works as advertised.</text>
+</svg>
+<div class="cap">Dock, wake, manufacture, darken — the tanning chain, and the only part with solid evidence behind it.</div>
+</div>
+<div class="dsub reveal"><span class="k">▸</span> Natural α-MSH vs synthetic MT2</div>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 240" role="img" aria-label="Comparing natural alpha-MSH with synthetic Melanotan 2">
+<text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">THE NATURAL ORIGINAL vs THE SYNTHETIC COPY</text>
+<line x1="320" y1="50" x2="320" y2="195" stroke="#2b2f4a" stroke-width="2"/>
+<text x="165" y="60" fill="#a9b1c9" font-size="13" font-weight="800" text-anchor="middle">α-MSH · the body&apos;s own</text>
+<path d="M70 100 q15 -14 30 0 t30 0 t30 0 t30 0 t30 0" stroke="#7f88a5" stroke-width="4" fill="none" stroke-linecap="round"/>
+<text x="165" y="132" fill="#7f88a5" font-size="11" font-weight="600" text-anchor="middle">linear · 13 amino acids</text>
+<text x="165" y="148" fill="#7f88a5" font-size="11" font-weight="600" text-anchor="middle">short-lived, selective</text>
+<path d="M165 158 V182" stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6"/>
+<rect x="95" y="186" width="140" height="32" rx="10" fill="#151b36" stroke="#7f88a5" stroke-width="2"/>
+<text x="165" y="207" fill="#a9b1c9" font-size="12" font-weight="800" text-anchor="middle">MC1R only</text>
+<text x="475" y="60" fill="#f9264a" font-size="13" font-weight="800" text-anchor="middle">MT2 · the synthetic copy</text>
+<circle cx="475" cy="100" r="22" fill="none" stroke="#f9264a" stroke-width="4"/>
+<circle cx="475" cy="100" r="30" fill="none" stroke="#f9264a" stroke-width="1.5" class="ringp"/>
+<text x="475" y="132" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">cyclic · 7 amino acids</text>
+<text x="475" y="148" fill="#f9264a" font-size="11" font-weight="700" text-anchor="middle">long-lived, promiscuous</text>
+<g font-size="10" font-weight="800" text-anchor="middle">
+<rect x="358" y="182" width="56" height="30" rx="8" fill="#151b36" stroke="#f9264a" stroke-width="2"/><text x="386" y="202" fill="#f9264a">MC1R</text>
+<rect x="420" y="182" width="56" height="30" rx="8" fill="#151b36" stroke="#7f88a5" stroke-width="2"/><text x="448" y="202" fill="#a9b1c9">MC3R</text>
+<rect x="482" y="182" width="56" height="30" rx="8" fill="#151b36" stroke="#7f88a5" stroke-width="2"/><text x="510" y="202" fill="#a9b1c9">MC4R</text>
+<rect x="544" y="182" width="56" height="30" rx="8" fill="#151b36" stroke="#7f88a5" stroke-width="2"/><text x="572" y="202" fill="#a9b1c9">MC5R</text>
+</g>
+<text x="320" y="232" fill="#7f88a5" font-size="12" text-anchor="middle">Same starting idea, different engineering — selectivity is the whole difference.</text>
+</svg>
+<div class="cap">The body&apos;s version whispers to one receptor and fades. The synthetic copy shouts at four and lingers.</div>
+</div>
+<div class="dsub reveal"><span class="k">▸</span> Why Melanotan II is different</div>
+<div class="grid2">
+<div class="card sky reveal"><h3>Structure: a locked ring</h3><p><strong>Cyclic heptapeptide</strong> — 7 amino acids joined head-to-tail. The ring resists the enzymes that chew up linear peptides, so it <strong>lasts far longer</strong> than the body&apos;s own α-MSH — and keeps hitting receptors for hours.</p></div>
+<div class="card teal reveal"><h3>Receptor activity: the shotgun</h3><p>Activates <strong>MC1R, MC3R, MC4R and MC5R</strong>. MT1/afamelanotide is picky — MC1R, mostly. MT2 knocks on every melanocortin door it finds, which is why one vial tans skin, kills appetite and causes erections.</p></div>
+<div class="card org reveal"><h3>Pigmentation: stronger, messier</h3><p><strong>Stronger darkening than MT1</strong>, and it works with little or no sun. But pigment doesn&apos;t land evenly — <strong>moles, freckles, scars and lips</strong> often darken first and fastest, which is where the worry starts.</p></div>
+<div class="card sky reveal"><h3>Sexual effects: the infamous part</h3><p><strong>MC3R/MC4R signaling in the brain</strong> drives libido and spontaneous erections — documented in trials, joked about in forums, and the reason no regulator would touch it as a cosmetic.</p></div>
+</div>
+<div class="dsub reveal"><span class="k">▸</span> Beyond the tan · the MC4R detour</div>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 250" role="img" aria-label="Melanotan 2 acting on MC4R in the brain causing effects beyond tanning">
+<text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">BEYOND THE TAN · THE MC4R DETOUR</text>
+<circle cx="110" cy="130" r="42" fill="#151b36" stroke="#f9264a" stroke-width="2"/>
+<circle cx="110" cy="130" r="50" fill="none" stroke="#f9264a" stroke-width="1.5" class="ringp"/>
+<text x="110" y="126" fill="#f9264a" font-size="13" font-weight="800" text-anchor="middle">BRAIN</text>
+<text x="110" y="146" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">MC4R</text>
+<path d="M158 130 H392" stroke="#f9264a" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6"/>
+<circle r="6" fill="#f9264a"><animateMotion dur="3s" repeatCount="indefinite" path="M158 130 H392"/></circle>
+<circle r="3" fill="#ffffff"><animateMotion dur="3s" repeatCount="indefinite" path="M158 130 H392"/></circle>
+<rect x="400" y="86" width="170" height="70" rx="16" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+<text x="485" y="112" fill="#7f88a5" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="1">DOWNSTREAM</text>
+<text x="485" y="134" fill="#edf0f9" font-size="12" font-weight="700" text-anchor="middle">same molecule,</text>
+<text x="485" y="150" fill="#edf0f9" font-size="12" font-weight="700" text-anchor="middle">different system</text>
+<g font-size="11" font-weight="800" text-anchor="middle">
+<rect x="400" y="166" width="82" height="28" rx="9" fill="#151b36" stroke="#129a44" stroke-width="1.5"/><text x="441" y="185" fill="#f9264a">libido</text>
+<rect x="490" y="166" width="82" height="28" rx="9" fill="#151b36" stroke="#129a44" stroke-width="1.5"/><text x="531" y="185" fill="#f9264a">arousal</text>
+<rect x="400" y="200" width="82" height="28" rx="9" fill="#151b36" stroke="#129a44" stroke-width="1.5"/><text x="441" y="219" fill="#a9b1c9">appetite ↓</text>
+<rect x="490" y="200" width="82" height="28" rx="9" fill="#151b36" stroke="#129a44" stroke-width="1.5"/><text x="531" y="219" fill="#a9b1c9">nausea</text>
+</g>
+<text x="320" y="244" fill="#7f88a5" font-size="12" text-anchor="middle">The brain effects aren&apos;t a bonus — they&apos;re the same non-selectivity, firing in the brain.</text>
+</svg>
+<div class="cap">Tanning happens in the skin. Everything else on this list happens because MT2 doesn&apos;t stay in the skin.</div>
+</div>
+<div class="dsub reveal"><span class="k">▸</span> From first signal to visible tan</div>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 220" role="img" aria-label="Timeline from receptor activation to visible pigmentation">
+<text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">FROM FIRST SIGNAL TO VISIBLE TAN</text>
+<line x1="40" y1="110" x2="600" y2="110" stroke="#2b2f4a" stroke-width="3"/>
+<circle r="7" fill="#f9264a"><animateMotion dur="6s" repeatCount="indefinite" path="M40 110 H600"/></circle>
+<circle r="3.5" fill="#ffffff"><animateMotion dur="6s" repeatCount="indefinite" path="M40 110 H600"/></circle>
+<g text-anchor="middle">
+<circle cx="90" cy="110" r="16" fill="none" stroke="#f9264a" stroke-width="2" class="ringp"/><circle cx="90" cy="110" r="8" fill="#f9264a"/>
+<text x="90" y="70" fill="#f9264a" font-size="13" font-weight="800">hours</text>
+<text x="90" y="148" fill="#edf0f9" font-size="12" font-weight="700">receptors switch on</text>
+<circle cx="230" cy="110" r="16" fill="none" stroke="#f9264a" stroke-width="2" class="ringp" style="animation-delay:.7s"/><circle cx="230" cy="110" r="8" fill="#f9264a"/>
+<text x="230" y="70" fill="#f9264a" font-size="13" font-weight="800">days</text>
+<text x="230" y="148" fill="#edf0f9" font-size="12" font-weight="700">melanin builds up</text>
+<circle cx="390" cy="110" r="16" fill="none" stroke="#f9264a" stroke-width="2" class="ringp" style="animation-delay:1.4s"/><circle cx="390" cy="110" r="8" fill="#f9264a"/>
+<text x="390" y="70" fill="#f9264a" font-size="13" font-weight="800">1–2 weeks</text>
+<text x="390" y="148" fill="#edf0f9" font-size="12" font-weight="700">skin visibly darkens</text>
+<circle cx="540" cy="110" r="16" fill="none" stroke="#129a44" stroke-width="2" class="ringp" style="animation-delay:2.1s"/><circle cx="540" cy="110" r="8" fill="#129a44"/>
+<text x="540" y="70" fill="#129a44" font-size="13" font-weight="800">weeks+</text>
+<text x="540" y="148" fill="#a9b1c9" font-size="12" font-weight="600">moles may darken too</text>
+</g>
+<text x="320" y="202" fill="#7f88a5" font-size="12" text-anchor="middle">Pigmentation is gradual — anyone promising an overnight transformation is selling something.</text>
+</svg>
+<div class="cap">The tan arrives on a biological schedule, not a marketing one — and the mole changes ride the same timeline.</div>
+</div>
+<div class="dsub reveal"><span class="k">▸</span> A tan is not a shield</div>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 250" role="img" aria-label="Why increased pigmentation does not eliminate UV skin damage">
+<text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">A TAN IS NOT A SHIELD</text>
+<rect x="40" y="50" width="250" height="150" rx="14" fill="#151b36" stroke="#f9264a" stroke-width="2"/>
+<g stroke="#fa4463" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="5 4">
+<path d="M90 58 L80 92"/><path d="M165 58 L165 92"/><path d="M240 58 L250 92"/>
+</g>
+<rect x="70" y="100" width="50" height="40" rx="6" fill="#9ee8b9"/>
+<rect x="130" y="100" width="50" height="40" rx="6" fill="#4ab06f"/>
+<rect x="190" y="100" width="50" height="40" rx="6" fill="#267c45"/>
+<text x="165" y="170" fill="#f9264a" font-size="12" font-weight="800" text-anchor="middle">MORE MELANIN</text>
+<text x="165" y="188" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">some UV gets filtered</text>
+<rect x="350" y="50" width="250" height="150" rx="14" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+<g stroke="#fa4463" stroke-width="2" fill="none" class="flowseq2" stroke-dasharray="5 4">
+<path d="M420 58 L410 140"/><path d="M490 58 L490 140"/><path d="M560 58 L570 140"/>
+</g>
+<path d="M430 100 l20 -14 l20 14 l20 -14 l20 14" stroke="#fb7188" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M492 86 l-8 12 l10 6 l-8 12" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+<text x="475" y="170" fill="#fb7188" font-size="12" font-weight="800" text-anchor="middle">UV DAMAGE CONTINUES</text>
+<text x="475" y="188" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">DNA damage doesn&apos;t check your tan</text>
+<text x="320" y="232" fill="#7f88a5" font-size="12" text-anchor="middle">Melanin filters some UV — it does not make skin damage-proof. Darker ≠ safe.</text>
+</svg>
+<div class="cap">The original skin-cancer-prevention idea was never proven — a tan without sun is still a tan, not armor.</div>
+</div>
+<div class="dsub reveal"><span class="k">▸</span> What it does vs what it doesn&apos;t do</div>
+<div class="grid2">
+<div class="card teal reveal"><h3>What it does</h3><p>✓ <strong>Darkens skin without sun</strong> — demonstrated in old human studies, the core effect.<br>✓ <strong>Suppresses appetite</strong> via MC4R — seen in studies, widely reported.<br>✓ <strong>Triggers sexual effects</strong> (libido, erections) — documented, sometimes to emergency-room degree.<br>✓ <strong>Darkens moles, freckles and scars</strong> — widely reported and in case literature.</p></div>
+<div class="card org reveal"><h3>What it doesn&apos;t do</h3><p>✗ <strong>Protect against skin cancer or sunburn</strong> — the original hypothesis, never proven.<br>✗ <strong>Work selectively on pigment only</strong> — impossible by design; non-selectivity is the molecule.<br>✗ <strong>Have a studied long-term safety profile</strong> — no long-term trials exist, period.<br>✗ <strong>Come with quality guarantees</strong> — every vial and spray is unregulated.</p></div>
+</div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>The pitch writes itself: <strong>dose → pigment → tan → spill</strong>. The tan is real pharmacology. But MT2 can’t knock on the pigment door without <strong>kicking down three others</strong> — which is why the “side effects” some users actually want (libido, appetite loss) are the same non-selectivity doctors feared.</p></div>
 </section>
 <mini-poll slug="melanotan2-mini-ch3"
@@ -672,8 +895,8 @@ mini-poll { display: block; }
   data-answers='[["🚫", "Dealbreaker"], ["🤔", "Tan is proven enough"], ["⚠️", "Safety gap worries me"], ["📊", "Need modern trials"]]'>
 </mini-poll>
 <section class="chapter" id="ch5">
-  <span class="eyebrow"><span class="n">05</span>MT2 vs MT1</span>
-  <h2>Melanotan 2 <span class="hl">vs</span> Melanotan 1</h2>
+  <span class="eyebrow"><span class="n">05</span>MT2 vs the field</span>
+  <h2>Melanotan 2 <span class="hl">vs</span> the field</h2>
   <p class="lede">Same family, same tanning idea — <strong>opposite fates</strong>. One became an approved medicine for a rare disease; the other became an unregulated internet drug. The difference is selectivity.</p>
   <div class="grid3">
 <div class="card sky reveal"><h3>MT2 · the shotgun</h3><p><strong>Cyclic, potent, non-selective</strong>: hits MC1R/MC3R/MC4R/MC5R. Tans hard — plus nausea, appetite loss, erections. Never approved; research chemical only.</p></div>
@@ -683,53 +906,151 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 230" role="img" aria-label="Melanotan 2 and Melanotan 1 as two paths with different approval outcomes">
       <g font-size="13" font-weight="800" text-anchor="middle">
-        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#9a3412" stroke-width="2"/>
-        <text x="130" y="75" fill="#fbbf24">MELANOTAN 2</text>
+        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+        <text x="130" y="75" fill="#f9264a">MELANOTAN 2</text>
         <text x="130" y="98" fill="#a9b1c9" font-size="11" font-weight="600">4 receptors hit</text>
         <text x="130" y="114" fill="#a9b1c9" font-size="11" font-weight="600">tan + side-effect bundle</text>
-        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#9a3412" stroke-width="2"/>
-        <text x="510" y="75" fill="#fbbf24">MELANOTAN 1</text>
+        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#129a44" stroke-width="2"/>
+        <text x="510" y="75" fill="#f9264a">MELANOTAN 1</text>
         <text x="510" y="98" fill="#a9b1c9" font-size="11" font-weight="600">MC1R mostly</text>
         <text x="510" y="114" fill="#a9b1c9" font-size="11" font-weight="600">tan, fewer spillovers</text>
         <rect x="230" y="150" width="180" height="60" rx="14" fill="#151b36" stroke="#7f88a5" stroke-width="2" stroke-dasharray="7 5"/>
         <text x="320" y="176" fill="#a9b1c9" font-size="12">"ONE APPROVED, ONE NOT"</text>
         <text x="320" y="195" fill="#7f88a5" font-size="10" font-weight="600">selectivity decided their fates</text>
       </g>
-      <g stroke="#fbbf24" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
+      <g stroke="#f9264a" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
         <path d="M220 100 Q 280 130 240 155"/><path d="M420 100 Q 360 130 400 155"/>
       </g>
     </svg>
     <div class="cap">Same pigment idea, different precision — and completely different regulatory outcomes.</div>
   </div>
+<div class="dsub reveal"><span class="k">▸</span> Melanotan 2 vs PT-141 · same family, opposite jobs</div>
+<div class="grid2">
+<div class="card sky reveal"><h3>Receptor activity</h3><p><strong>MT2:</strong> MC1R + MC3R + MC4R + MC5R — pigment plus brain plus more.<br><strong>PT-141:</strong> focused on <strong>MC3R/MC4R in the brain</strong> — sexual function, not skin. Same receptor family, deliberately narrower aim.</p></div>
+<div class="card teal reveal"><h3>Pigmentation</h3><p><strong>MT2:</strong> tanning is the entire point — strong, UV-free darkening.<br><strong>PT-141:</strong> essentially <strong>no tanning effect</strong>. It was engineered away from pigment toward the brain. If it tans you, something&apos;s off.</p></div>
+<div class="card org reveal"><h3>Sexual effects</h3><p><strong>MT2:</strong> erections and libido as <strong>side effects</strong> of a tanning drug — unstudied, unregulated, occasionally dangerous (priapism).<br><strong>PT-141:</strong> sexual desire as the <strong>intended effect</strong> — through trials, approved as Vyleesi (2019) for HSDD.</p></div>
+<div class="card sky reveal"><h3>Clinical development</h3><p><strong>MT2:</strong> pharma walked away; the formula went feral on the internet.<br><strong>PT-141:</strong> completed <strong>phase 3 trials</strong>, earned FDA approval — the melanocortin that stayed inside medicine. Different evidence universes.</p></div>
+</div>
+<div class="grid2">
+<div class="card teal reveal"><h3>MT1 = afamelanotide = Scenesse</h3><p>One molecule, three names, two worlds: <strong>afamelanotide (Scenesse)</strong> is pharmaceutical-grade MT1 in a controlled implant, approved for the rare light-sensitivity disease EPP. <strong>&quot;Melanotan 1&quot; sold online</strong> is unregulated powder of uncertain content — same name on the label, nothing verified inside.</p></div>
+<div class="card org reveal"><h3>Why PT-141 got approved and MT2 didn&apos;t</h3><p>Regulators weigh <strong>benefit against harm for a specific disease</strong>. PT-141 treated a real condition with trial data. MT2 chased <strong>cosmetic tanning</strong> — where tolerance for nausea, mole changes and priapism is effectively zero. Same family; opposite risk math.</p></div>
+</div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>Two keys cut from the same blank: MT1 opens <strong>mostly the pigment lock</strong> and earned a medical license; MT2 opens <strong>every lock in the building</strong> and got banned from the premises. When people say “melanotan” online, they almost always mean the unapproved one — <strong>that distinction matters</strong>.</p></div>
 </section>
 <mini-poll slug="melanotan2-mini-ch5"
-  data-question="Melanotan 2 vs Melanotan 1 — which story is more interesting?"
-  data-answers='[["🟠", "MT2 the shotgun"], ["🟢", "MT1 the scalpel"], ["🤔", "Why one got approved"], ["🚫", "Neither — too risky"]]'>
+  data-question="MT2 vs MT1 vs PT-141 — which comparison surprised you most?"
+  data-answers='[["🎯", "MT2 vs MT1 selectivity"], ["💊", "PT-141&apos;s approval story"], ["🧬", "The receptor shotgun"], ["😐", "None surprised me"]]'>
 </mini-poll>
 <section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>What people say</span>
-  <h2>Reports from the <span class="hl">wild</span></h2>
-  <p class="lede">Tanning forums, social media, and “research peptide” communities hold <strong>years</strong> of MT2 stories — the largest anecdote pool of any peptide on this site, and still not data.</p>
+  <span class="eyebrow"><span class="n">06</span>Potential benefits</span>
+  <h2>Potential <span class="hl">benefits</span></h2>
+  <p class="lede">Melanotan 2 has <strong>no approved indication</strong> — nothing below is an established medical use. The claims around it are organized into three tiers of evidence, badged so they can <strong>never be mistaken for each other</strong>: what old studies actually showed, what is predicted but unproven, and what the community says.</p>
+  <div class="diagram reveal">
+<svg viewBox="0 0 640 348" role="img" aria-label="Evidence tiers: the established tier is the smallest, the community tier the largest">
+  <text x="320" y="26" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle">EVIDENCE TIERS — NOT ALL CLAIMS ARE EQUAL</text>
+  <text x="320" y="64" fill="#f9264a" font-size="14" font-weight="800" text-anchor="middle">ESTABLISHED · SOLID DATA</text>
+  <rect x="220" y="76" width="200" height="38" rx="9" fill="rgba(249,38,74,.15)" stroke="#f9264a" stroke-width="2"/>
+  <text x="320" y="132" fill="#a9b1c9" font-size="12.5" text-anchor="middle">tan without UV · appetite · sexual effects</text>
+  <text x="320" y="166" fill="#6be899" font-size="14" font-weight="800" text-anchor="middle">PREDICTED / EMERGING · NOT PROVEN</text>
+  <rect class="flow" x="170" y="178" width="300" height="38" rx="9" fill="rgba(18,154,68,.15)" stroke="#5fe08e" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="320" y="234" fill="#a9b1c9" font-size="12.5" text-anchor="middle">the UV-free-tan idea · anti-inflammatory signals · sexual-function research</text>
+  <text x="320" y="268" fill="#fa4463" font-size="14" font-weight="800" text-anchor="middle">COMMUNITY · UNVERIFIED ANECDOTES</text>
+  <rect x="120" y="280" width="400" height="38" rx="9" fill="rgba(250,68,99,.06)" stroke="#fa4463" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+</svg>
+<div class="cap">The established tier is the smallest bar. Most of what&apos;s claimed about MT2 lives in the lower two — predicted or unverified.</div>
+  </div>
+  <div class="tier est reveal">
+    <span class="tbadge est">Established · solid data</span>
+    <h3>What the research actually demonstrated</h3>
+    <p>Small human studies in the 1980s–90s confirmed the core effect — and the molecule&apos;s receptor shotgun produced the rest. Demonstrated does not mean approved: every item below is a <strong>documented effect</strong>, not a medical benefit claim.</p>
+    <ul>
+      <li><strong>Tanning without UV</strong> — real, measurable increases in skin pigmentation in human subjects. The one effect nobody disputes.</li>
+      <li><strong>Appetite reduction</strong> — seen in animal studies and human observations via MC4R signaling, often riding on nausea.</li>
+      <li><strong>Sexual effects</strong> — increased libido and erections documented in studies; the same pharmacology that produced the approved drug <strong>PT-141</strong> for low sexual desire — a narrower, different molecule, not MT2.</li>
+      <li><strong>Keep the names straight:</strong> <strong>afamelanotide (Scenesse)</strong> is the approved implant — a more selective MT1 drug for the rare light-sensitivity disease EPP. Its approval says <strong>nothing</strong> about MT2, which is <strong>not FDA-approved</strong> for anything.</li>
+    </ul>
+    <div class="layman"><span class="ldot" aria-hidden="true"></span><p><strong>Think of it this way:</strong> eumelanin is like a thin permanent umbrella built into the skin — it blocks <em>some</em> UV. But nobody would call an umbrella a roof: sunscreen, shade and clothing are the roof. The tan is real; the protection is partial at best.</p></div>
+  </div>
+  <div class="tier pred reveal">
+    <span class="tbadge pred">Predicted / emerging · not proven</span>
+    <h3>Plausible from the pharmacology — never proven</h3>
+    <ul>
+      <li><strong>The original &quot;UV-free tan&quot; idea</strong> — the Arizona hypothesis: if fair-skinned people could tan without sun, skin-cancer rates might fall. Elegant, and <strong>never tested in trials</strong>.</li>
+      <li><strong>Anti-inflammatory signals</strong> — melanocortin receptor activation calms inflammation in lab models. Interesting direction; <strong>no clinical MT2 evidence</strong>.</li>
+      <li><strong>Sexual-function research</strong> — predicted from MC4R pharmacology, but established only for the narrower PT-141, not for MT2 itself.</li>
+    </ul>
+    <div class="layman"><span class="ldot" aria-hidden="true"></span><p><strong>Think of it this way:</strong> the Arizona idea was &quot;what if people could get the umbrella without standing in the rain?&quot; — a clever hypothesis that stayed a hypothesis. Predicted is not demonstrated, and this page keeps them in separate boxes.</p></div>
+  </div>
+  <div class="tier com reveal">
+    <span class="tbadge com">Community · unverified anecdotes</span>
+    <h3>What forums report — stories, not data</h3>
+    <div class="ulegend" style="margin:0 0 1rem"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks paraphrased recurring themes from forums and social media: not verified, not evidence.</p></div>
+    <ul>
+      <li><strong>Faster tanning with less sun</strong> — the most consistent community theme, and the one old studies back. <strong>Caveat:</strong> forum vials vary in content, so results aren&apos;t comparable.</li>
+      <li><strong>Libido and arousal effects</strong> — reported almost as often as the tan. <strong>Caveat:</strong> plausible from MC4R pharmacology, but forums can&apos;t measure dose, purity, or placebo.</li>
+      <li><strong>Fat loss and vanished appetite</strong> — framed as a benefit online. <strong>Caveat:</strong> mostly nausea plus MC4R appetite suppression; forgetting to eat isn&apos;t a wellness win.</li>
+    </ul>
+  </div>
+  <div class="card org reveal"><h3>☀️ More melanin is not a sunscreen</h3><p>A tan — MT2-induced or otherwise — <strong>does not equal skin protection</strong>. Tanned skin still burns, still accumulates UV damage, and still carries skin-cancer risk. Treating an MT2 tan as &quot;safe tanning&quot; is a misunderstanding of what melanin does.</p></div>
+</section>
+<mini-poll slug="melanotan2-mini-benefits"
+  data-question="Which potential benefit area interests you most?"
+  data-answers='[["🎨", "Tanning without sun"], ["🧠", "Appetite &amp; metabolism"], ["❤️", "Sexual function"], ["🛡️", "Inflammation research"]]'>
+</mini-poll>
+<section class="chapter" id="ch7">
+  <span class="eyebrow"><span class="n">07</span>Fit &amp; caution</span>
+  <h2>Who it may <span class="hl">suit</span> — and who it should not</h2>
+  <p class="lede">Melanotan 2 has <strong>no approved indication for any population</strong>. What follows is general information about where the research exists and where caution is warranted — <strong>not personal medical advice</strong>.</p>
+  <div class="grid2">
+    <div class="card sky fittile reveal">
+      <div class="fhead"><span class="fico">🧪</span><h3>May be relevant for</h3></div>
+      <p>Contexts where melanocortin research actually exists — a record of where science has looked, not endorsements:</p>
+      <ul>
+        <li><strong>Researchers</strong> studying melanocortin signaling — the molecule&apos;s natural home is the laboratory.</li>
+        <li><strong>Clinical-trial participants</strong> in regulated studies of melanocortin drugs (e.g. PT-141, afamelanotide).</li>
+        <li><strong>The original Arizona research question</strong> — fair-skinned adults at high skin-cancer risk were the population the UV-free-tanning hypothesis was aimed at. It stayed a hypothesis.</li>
+      </ul>
+    </div>
+    <div class="card org fittile reveal">
+      <div class="fhead"><span class="fico">⚠️</span><h3>May not suit / extra caution</h3></div>
+      <ul>
+        <li><strong>Many or atypical moles, or a personal or family history of melanoma</strong> — MT2 darkens moles and stimulates the very cells melanoma arises from; the long-term risk is unknown.</li>
+        <li><strong>Fair-skinned people chasing &quot;safe tanning&quot;</strong> — a tan is not sun protection, and MT2 does not make UV exposure safe.</li>
+        <li><strong>Cardiovascular or blood-pressure concerns</strong> — the effects of chronic, non-selective melanocortin activation on heart and vessels are entirely uncharted.</li>
+        <li><strong>Pregnancy, breastfeeding, or adolescence</strong> — never studied; no safety data exists at all.</li>
+        <li><strong>Priapism risk factors</strong> (for example sickle cell disease) — MC4R-driven erection effects are documented in case reports.</li>
+        <li><strong>Anyone who can&apos;t verify what&apos;s in the vial</strong> — every MT2 product sold is unregulated, with no quality oversight.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="layman reveal"><span class="ldot" aria-hidden="true"></span><p><strong>Think of it this way:</strong> there is no approved &quot;right patient&quot; for MT2 — no doctor can prescribe it for any condition. The left tile lists where science has looked; the right tile lists where the warning signs point. <strong>This is general information, not personal medical advice.</strong></p></div>
+</section>
+<mini-poll slug="melanotan2-mini-fit"
+  data-question="The &quot;who should be cautious&quot; list — which surprised you most?"
+  data-answers='[["🧬", "Moles &amp; melanoma history"], ["☀️", "The &apos;safe tan&apos; myth"], ["🫀", "Heart &amp; blood pressure"], ["🚫", "No approved use at all"]]'>
+</mini-poll>
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Community reports</span>
+  <h2>Community <span class="hl">reports</span></h2>
+  <p class="lede">Reddit, TikTok, YouTube Shorts, tanning forums and “research peptide” communities hold <strong>years</strong> of MT2 stories — the largest anecdote pool of any peptide on this site. Recurring themes below are <strong>unverified stories, not data</strong>: they can&apos;t prove effects, but the patterns are worth knowing.</p>
   <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div>
   <div class="anec-grid">
 <div class="anec reveal"><div class="anec-head"><h4>The tan works</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Three weeks and I’m darker than any summer of my life.” <strong>Caveat:</strong> the one claim the old human studies support — but forum vials vary in content, so results aren’t comparable.</p><div class="caveat">Pattern: the core effect, consistently reported for 15+ years.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Moles on the move</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“My moles got darker — a couple look different.” <strong>Caveat:</strong> dermatologists flag exactly this: darkening or changing moles need <strong>in-person evaluation</strong>, not forum reassurance.</p><div class="caveat">Pattern: the most medically concerning recurring theme.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Nausea initiation</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Day one I was green. It fades if you push through.” <strong>Caveat:</strong> “push through” is folk dosing wisdom, not medicine — and nausea is also doing the appetite-suppressing.</p><div class="caveat">Pattern: a rite of passage the community normalizes.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Appetite vanished</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I forgot to eat for two days.” <strong>Caveat:</strong> forgetting to eat isn’t a wellness win; it’s MC4R doing its thing plus nausea.</p><div class="caveat">Pattern: a side effect reframed as a feature.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>The erection stories</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Let’s just say it works as advertised there too.” <strong>Caveat:</strong> priapism — erections lasting hours — is a <strong>medical emergency</strong>, and case reports exist.</p><div class="caveat">Pattern: the famous side effect, joked about more than warned about.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Freckle explosion</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Freckles everywhere — even where I never had them.” <strong>Caveat:</strong> new pigmented spots deserve the same scrutiny as changing moles.</p><div class="caveat">Pattern: pigment activation isn’t always even or pretty.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Nasal spray roulette</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Switched to the nasal spray — way weaker.” <strong>Caveat:</strong> different products, different absorption, different actual contents — comparisons are meaningless.</p><div class="caveat">Pattern: formulation chaos in an unregulated market.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>The long-timers</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Years on and off, no problems.” <strong>Caveat:</strong> survivorship bias — people with problems leave; people without problems post.</p><div class="caveat">Pattern: reassuring stories from the least representative sample.</div></div>
-  </div>
-  <div class="folk-note reveal"><p>The MT2 forums are the <strong>largest uncontrolled experiment</strong> in peptide history — thousands of people, zero measurements, unknown chemicals. The tan reports are plausible (old trials agree); the safety reassurances are <strong>worth exactly nothing</strong>, because nobody’s tracking the people who quietly quit.</p></div>
+<div class="anec reveal"><div class="anec-head"><h4>Libido surge</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Didn’t expect the libido part to hit harder than the tan.” <strong>Caveat:</strong> MC4R pharmacology makes this plausible — but forums can’t measure dose, purity, or placebo.</p><div class="caveat">Pattern: the brain effect users talk about almost as much as tanning.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Spontaneous effects</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Erections at the worst possible times.” <strong>Caveat:</strong> funny until it isn’t — prolonged erections are a <strong>medical emergency</strong>, and case reports exist.</p><div class="caveat">Pattern: joked about far more than warned about.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Appetite vanished</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I forgot to eat for two days.” <strong>Caveat:</strong> forgetting to eat isn’t a wellness win — it’s MC4R plus nausea doing their thing.</p><div class="caveat">Pattern: a side effect reframed as a feature.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Nausea wave</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Felt sick for hours after dosing — especially at the start.” <strong>Caveat:</strong> “pushing through” is folk wisdom, not medicine; nausea also drives the appetite loss.</p><div class="caveat">Pattern: a rite of passage the community normalizes.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Flushing face</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Bright red face for an hour, like a bad sunburn without the sun.” <strong>Caveat:</strong> vasodilation is consistent with melanocortin activity — but redness can also mask real skin reactions.</p><div class="caveat">Pattern: common, short-lived, rarely discussed seriously.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Patchy pigment</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“My moles, freckles and even old scars went dark first — the tan itself was uneven.” <strong>Caveat:</strong> new or changing pigmented spots deserve a <strong>dermatologist</strong>, not forum reassurance.</p><div class="caveat">Pattern: pigment activation isn’t always even or pretty.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Little or no effect</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Two vials in and I’m barely a shade darker.” <strong>Caveat:</strong> non-response, bunk product, or both — with unregulated vials there’s no way to tell which.</p><div class="caveat">Pattern: the reports you don’t see in before/after photos.</div></div>
+</div>
 </section>
 <mini-poll slug="melanotan2-mini-ch6"
-  data-question="Tanning-forum stories — how do you read them?"
-  data-answers='[["💬", "Tan reports believable"], ["🧂", "Salt required"], ["⚠️", "Safety talk is thin"], ["⚖️", "Stories aren’t data"]]'>
+  data-question="Community reports vs clinical evidence — how do you weigh them?"
+  data-answers='[["📖", "Stories reveal real patterns"], ["🧂", "Interesting, not evidence"], ["⚠️", "Safety signals matter"], ["📊", "Only trials count"]]'>
 </mini-poll>
-<section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Risks & unknowns</span>
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Risks & unknowns</span>
   <h2>Risks &amp; <span class="hl">unknowns</span></h2>
   <p class="lede">What’s been observed, what’s plausible from the pharmacology, and what’s simply unknown — in separate boxes, on purpose.</p>
   <div class="safety-grid">
@@ -746,77 +1067,33 @@ mini-poll { display: block; }
   data-question="Biggest red flag for you?"
   data-answers='[["⚠️", "Changing moles"], ["🚨", "Priapism risk"], ["🏭", "What’s in the vial"], ["❓", "The melanoma unknown"]]'>
 </mini-poll>
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Glossary</span>
-  <h2>Speak <span class="hl">melanocortin</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Glossary</span>
+  <h2>Understanding <span class="hl">Melanotan-2</span> Terminology</h2>
+  <p class="lede">Twelve terms, each with the science and a plain-English translation. Tap any term to expand it.</p>
   <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbbf2422"/><circle cx="24" cy="24" r="13" fill="none" stroke="#fbbf24" stroke-width="2.5"/><circle cx="24" cy="24" r="4.5" fill="#fbbf24"/></svg><span class="term">Melanotan 2</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A synthetic cyclic heptapeptide and non-selective melanocortin receptor agonist (MC1R/MC3R/MC4R/MC5R). Never approved as a medicine.</p>
-      <p class="gex"><span class="gslabel">Example</span>The unregulated tanning peptide this page is about.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The internet’s tanning drug — effective, unapproved, messy.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#9a341222"/><path d="M6 30c5-12 9-16 12-16s7 8 12 8 7-4 12-8" fill="none" stroke="#9a3412" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">α-MSH</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Alpha-melanocyte-stimulating hormone: the body’s natural pigment signal, released in response to UV. Melanotan peptides are synthetic analogs of it.</p>
-      <p class="gex"><span class="gslabel">Example</span>What MT2 is copying.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Your skin’s own “make more pigment” memo after sun exposure.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#43140722"/><path d="M8 24h28M28 14l10 10-10 10" fill="none" stroke="#431407" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Melanocortin receptors</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A five-member receptor family (MC1R–MC5R) controlling pigmentation, appetite, sexual function, and inflammation.</p>
-      <p class="gex"><span class="gslabel">Example</span>The four locks MT2’s skeleton key opens.</p>
-      <div class="plain"><span class="plabel">Plain English</span>One receptor family with jobs all over the body.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbbf2422"/><path d="M24 6l14 6v10c0 9-6 15-14 18-8-3-14-9-14-18V12z" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">MC1R</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The melanocortin-1 receptor on pigment cells (melanocytes). Its activation drives eumelanin production — tanning.</p>
-      <p class="gex"><span class="gslabel">Example</span>The intended target.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The pigment switch — the one MT2 was meant to flip.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#9a341222"/><path d="M24 6c8 10 12 16 12 22a12 12 0 0 1-24 0c0-6 4-12 12-22z" fill="none" stroke="#9a3412" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Eumelanin</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The dark brown-black pigment that gives tans their color and some UV protection. Distinct from red-yellow pheomelanin.</p>
-      <p class="gex"><span class="gslabel">Example</span>What a real tan is made of.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The dark pigment of a genuine tan (not the orange spray kind).</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#43140722"/><path d="M6 24h8l4-10 6 20 4-10h14" fill="none" stroke="#431407" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Melanotan 1</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The earlier, linear, more MC1R-selective tanning peptide — developed into the approved medicine afamelanotide (Scenesse).</p>
-      <p class="gex"><span class="gslabel">Example</span>MT2’s better-behaved sibling.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The scalpel to MT2’s shotgun — and the one that got approved.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbbf2422"/><path d="M18 6h12M20 6v12l-8 16h24l-8-16V6" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Priapism</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A prolonged, often painful erection lasting hours, unrelated to arousal — a urological emergency risking permanent damage.</p>
-      <p class="gex"><span class="gslabel">Example</span>The rare serious risk in MT2 case reports.</p>
-      <div class="plain"><span class="plabel">Plain English</span>An erection that won’t quit — and can cause lasting harm.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#9a341222"/><path d="M10 8h12a6 6 0 0 1 6 6v22a6 6 0 0 0-6-6H10zM10 8v28" fill="none" stroke="#9a3412" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Non-selective</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A drug property: activating multiple receptor types instead of one. Broader effects — wanted and unwanted — come bundled.</p>
-      <p class="gex"><span class="gslabel">Example</span>Why MT2 does four jobs at once.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A skeleton key instead of a single cut key.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#43140722"/><path d="M24 8l4.5 9.5 10.5 1.5-7.5 7.5 1.8 10.5-9.3-5-9.3 5 1.8-10.5-7.5-7.5 10.5-1.5z" fill="none" stroke="#431407" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Research chemical</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Unregulated gray-market category: sold “for research” with no approved medical use and no quality oversight.</p>
-      <p class="gex"><span class="gslabel">Example</span>The only shelf MT2 sits on.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Internet lab supply with no safety net.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbbf2422"/><circle cx="16" cy="24" r="7" fill="none" stroke="#fbbf24" stroke-width="2.5"/><circle cx="32" cy="24" r="7" fill="none" stroke="#fbbf24" stroke-width="2.5"/></svg><span class="term">Case report</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A published medical account of a single patient’s experience. Useful for spotting rare harms; useless for measuring how common they are.</p>
-      <p class="gex"><span class="gslabel">Example</span>Where the priapism and mole scares live.</p>
-      <div class="plain"><span class="plabel">Plain English</span>One person’s story, written up by their doctor.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#9a341222"/><path d="M6 24c4-8 10-12 18-12s14 4 18 12c-4 8-10 12-18 12S10 32 6 24z" fill="none" stroke="#9a3412" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#9a3412"/></svg><span class="term">Regulator warning</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>An official public alert from a health authority about an unapproved product’s risks.</p>
-      <p class="gex"><span class="gslabel">Example</span>What agencies issued over injectable/nasal tanning products.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The authorities’ “do not do this” notice.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#43140722"/><path d="M24 6v34M14 40h20M10 14h28M16 14l-6 14h12zM32 14l-6 14h12z" fill="none" stroke="#431407" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>An inactive control. In tanning, expectation can’t fake melanin — which is why MT2’s core claim is unusually robust for a gray-market drug.</p>
-      <p class="gex"><span class="gslabel">Example</span>Less relevant to whether it tans; very relevant to how people feel on it.</p>
-      <div class="plain"><span class="plabel">Plain English</span>You can’t placebo your way to actual pigment.</div>
-    </div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbbf2422"/><circle cx="24" cy="24" r="13" fill="none" stroke="#f9264a" stroke-width="2.5"/><circle cx="24" cy="24" r="4.5" fill="#f9264a"/></svg><span class="term">Melanotan 2</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Melanotan 2 (MT2) is a synthetic cyclic heptapeptide — seven amino acids joined head-to-tail in a ring — and a non-selective melanocortin receptor agonist hitting MC1R, MC3R, MC4R, and MC5R. The ring structure resists the enzymes that chew up linear peptides, so it lasts far longer than the body's own α-MSH. It tans skin without sun — demonstrated in small, short, old human studies — and no regulator has ever approved it for tanning or anything else. Everything sold as MT2 is an unregulated research chemical with no quality oversight and a history of mislabeled products. Its non-selectivity is the whole story: one molecule, four receptor jobs, wanted effects and side effects bundled.</p><div class="plain"><span class="plabel">Plain English</span>Melanotan 2 is the internet's tanning drug — a synthetic ring of seven amino acids that switches on melanocortin receptors all over the body. It genuinely darkens skin without sun; that part is real pharmacology from old human studies. But it was never approved as a medicine anywhere, and everything sold online is unregulated — no quality guarantees, sometimes mislabeled. Because it hits four receptor types at once, the tan comes bundled with appetite changes, nausea, and sexual effects. Effective, unapproved, messy — the shotgun, not the scalpel — and the unregulated tanning peptide this page is about.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#9a341222"/><path d="M6 30c5-12 9-16 12-16s7 8 12 8 7-4 12-8" fill="none" stroke="#129a44" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">α-MSH</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>α-MSH (alpha-melanocyte-stimulating hormone) is the body's natural pigment signal — a 13-amino-acid linear peptide released in response to UV exposure. It whispers selectively to MC1R on melanocytes and fades quickly, a short-lived, single-receptor memo. Melanotan peptides are synthetic analogs of it: MT2 keeps the core idea but rebuilds it as a cyclic, long-lived, promiscuous molecule. Same starting idea, different engineering — selectivity is the whole difference. Understanding α-MSH explains both what MT2 copies and what it deliberately abandons.</p><div class="plain"><span class="plabel">Plain English</span>α-MSH is your skin's own “make more pigment” memo — released after sun exposure, talking to one receptor, then fading fast. It's the natural original: linear, 13 building blocks, short-lived, selective. Melanotan 2 is the synthetic copy that kept the memo's idea but changed everything else — ring-shaped instead of linear, long-lasting instead of fleeting, shouting at four receptors instead of whispering to one. It's what MT2 is copying. Same starting idea, opposite engineering — selectivity is the whole difference.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#43140722"/><path d="M8 24h28M28 14l10 10-10 10" fill="none" stroke="#430711" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Melanocortin receptors</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Melanocortin receptors are a five-member family (MC1R through MC5R) of cell-surface receptors that respond to melanocortin hormones like α-MSH. Their jobs sprawl across the body: MC1R drives pigmentation in melanocytes, MC4R regulates appetite and sexual function in the brain, MC3R handles energy balance, and MC5R works in skin glands. One receptor family with jobs all over the body — which is why a non-selective agonist like MT2 produces a four-drugs-in-one effect profile. Drug designers usually aim for one lock; MT2 is a skeleton key. The family's breadth is the reason selectivity matters so much in this field.</p><div class="plain"><span class="plabel">Plain English</span>Melanocortin receptors are one family of five locks scattered across the body — skin pigment, appetite, arousal, energy balance, skin glands. Most drugs are cut for a single lock. MT2 is a skeleton key that opens four of them (MC1R, MC3R, MC4R, MC5R), which is exactly why one peptide tans skin, curbs hunger, and triggers erections. The tan and the side effects share a cause: same key, different doors. It's a vivid lesson in why drug designers normally obsess over hitting just one target — the four locks MT2's skeleton key opens.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbbf2422"/><path d="M24 6l14 6v10c0 9-6 15-14 18-8-3-14-9-14-18V12z" fill="none" stroke="#f9264a" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">MC1R</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>MC1R (melanocortin-1 receptor) is the receptor on pigment cells (melanocytes) whose activation drives eumelanin production — tanning. It is the intended target of the whole melanotan project: flip this switch and skin darkens without UV damage. The body's own α-MSH talks to MC1R almost exclusively, which is the selectivity the synthetic copies abandoned. MT2 does activate MC1R — the tanning mechanism is straightforward and demonstrated — but it can't knock on this door without kicking down three others. Variants in the MC1R gene are also what give redheads their coloring and sun sensitivity.</p><div class="plain"><span class="plabel">Plain English</span>MC1R is the pigment switch — the receptor on melanocytes that tells them to make dark pigment. It's the one lock MT2 was actually meant to open: flip it and you get a real tan without sunburn. Your body's own version whispers to this switch and stops there. MT2 flips it too — the tanning part genuinely works — but it also flips three other switches nobody asked for. It's the intended target — and fun fact: variations in this same gene are why redheads burn instead of tan.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#9a341222"/><path d="M24 6c8 10 12 16 12 22a12 12 0 0 1-24 0c0-6 4-12 12-22z" fill="none" stroke="#129a44" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Eumelanin</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Eumelanin is the dark brown-black pigment that gives tans their color — and, distinct from the red-yellow pheomelanin, it absorbs some UV. When MC1R signaling ramps up, melanocytes shift production toward eumelanin, and skin visibly darkens. But a tan is not a shield: melanin filters some UV; it does not make skin damage-proof, and the original skin-cancer-prevention hypothesis was never proven. MT2-driven pigmentation doesn't land evenly either — moles, freckles, scars, and lips often darken first and fastest, which is where the worry starts. Real melanin, real color, real limits.</p><div class="plain"><span class="plabel">Plain English</span>Eumelanin is the dark pigment of a genuine tan — brown-black, distinct from the red-yellow kind, and it does filter some UV. It's what MT2 tells your pigment cells to manufacture, and what a real tan is made of. But darker does not mean safe: a tan without sun is still a tan, not armor, and the skin-cancer-prevention idea was never proven. And MT2's pigment doesn't distribute evenly — moles, freckles, and scars often darken first and fastest. Real pigment, real color, real limits — and uneven ones.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#43140722"/><path d="M6 24h8l4-10 6 20 4-10h14" fill="none" stroke="#430711" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Melanotan 1</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Melanotan 1 (MT1) is the earlier tanning peptide: linear rather than cyclic, and far more selective for MC1R — the pigment receptor. It was effective but long and less potent, which is why the shorter, stronger, cyclic MT2 followed. MT1's selectivity is what made it developable: it became afamelanotide (Scenesse), an approved medicine for the rare light-sensitivity disorder erythropoietic protoporphyria. It is the scalpel to MT2's shotgun — and the one that got approved. The contrast between the two is the field's clearest lesson in why selectivity decides which molecules become medicines.</p><div class="plain"><span class="plabel">Plain English</span>Melanotan 1 is MT2's better-behaved sibling — the earlier peptide, linear instead of ring-shaped, and picky about hitting mostly the pigment receptor. Less potent, more selective, and that selectivity is what made it a real medicine: it became afamelanotide (Scenesse), approved for a rare sun-intolerance disorder. The scalpel to MT2's shotgun — and the one regulators said yes to. Comparing the two siblings is the clearest possible lesson in why hitting one target beats hitting four.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbbf2422"/><path d="M18 6h12M20 6v12l-8 16h24l-8-16V6" fill="none" stroke="#f9264a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Priapism</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Priapism is a prolonged erection lasting hours — often painful, unrelated to arousal — and it is a urological emergency. Without prompt treatment it risks permanent tissue damage and lasting erectile dysfunction. It appears in Melanotan 2 case reports, a predictable consequence of MC3R/MC4R signaling in the brain driving sexual effects indiscriminately. It is rare, but it is the kind of rare that emergency rooms exist for. The case literature also documents severe nausea and mole changes — the warning file around MT2 is thicker than its efficacy file.</p><div class="plain"><span class="plabel">Plain English</span>Priapism is an erection that won't quit — lasting hours, often painful, with nothing to do with arousal — and it's a genuine medical emergency. Left untreated it can cause permanent damage. It shows up in Melanotan 2 case reports, which makes sense: the same brain-receptor signaling that causes the famous libido effects doesn't know when to stop. Rare, but the kind of rare that sends people to the ER. It's the rare serious risk in MT2 case reports — sitting in a warning file that's thicker than the evidence file.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#9a341222"/><path d="M10 8h12a6 6 0 0 1 6 6v22a6 6 0 0 0-6-6H10zM10 8v28" fill="none" stroke="#129a44" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Non-selective</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Non-selective describes a drug that activates (or blocks) multiple receptor types instead of one — the opposite of a targeted, selective medicine. The consequence is bundled pharmacology: wanted effects and side effects arrive in the same package, inseparable by design. MT2 is the textbook case — four melanocortin receptors, four job descriptions, one molecule. Selectivity is what drug designers normally optimize for, because it separates benefit from harm. Non-selectivity is why MT2's effect list reads like four different drugs' side-effect profiles stapled together.</p><div class="plain"><span class="plabel">Plain English</span>Non-selective means a skeleton key instead of a single cut key — one molecule that opens several different locks. The catch is that the wanted effects and the side effects come bundled: you can't open just the tan door. MT2 is the poster child — skin, appetite, arousal, nausea, all from one peptide. Drug designers normally spend years engineering selectivity precisely to avoid this. MT2 skipped that step, and its effect list reads like four drugs' side-effect profiles stapled together — which is why it does four jobs at once.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#43140722"/><path d="M24 8l4.5 9.5 10.5 1.5-7.5 7.5 1.8 10.5-9.3-5-9.3 5 1.8-10.5-7.5-7.5 10.5-1.5z" fill="none" stroke="#430711" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Research chemical</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>“Research chemical” is the gray-market category under which unregulated substances are sold — labeled “for research use,” with no approved medical use and no quality oversight. It is the only shelf Melanotan 2 sits on: vials and nasal sprays sold online with no purity guarantees and a documented history of mislabeled products. The label is a legal fiction, not a safety standard — “research” describes the paperwork, not the contents. Every claim about what's in the vial rests on the seller's word. It is internet lab supply with no safety net, and MT2's entire commercial existence lives there.</p><div class="plain"><span class="plabel">Plain English</span>“Research chemical” is internet-speak for an unregulated gray-market product — sold “for research” with no approved medical use and nobody checking what's inside. It's the only shelf MT2 sits on: vials and sprays from online sellers, no quality oversight, a track record of mislabeled products. The label is paperwork, not a safety standard — “research” describes the listing, not the liquid. Whatever the seller claims is in the vial is all you have to go on. No safety net, no recourse, no guarantees — internet lab supply with no safety net.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbbf2422"/><circle cx="16" cy="24" r="7" fill="none" stroke="#f9264a" stroke-width="2.5"/><circle cx="32" cy="24" r="7" fill="none" stroke="#f9264a" stroke-width="2.5"/></svg><span class="term">Case report</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A case report is a published medical account of a single patient's experience — one person's story, written up by their doctor. They are useful for spotting rare harms that trials are too small or too short to catch: MT2's priapism and mole-change scares live here. But they cannot measure how common anything is — one dramatic case proves possibility, not frequency. They sit at the bottom of the evidence ladder, below even small trials. Around MT2, where no modern trials exist, case reports and regulator warnings are the thickest part of the safety file — which says more about the missing trials than about the reports.</p><div class="plain"><span class="plabel">Plain English</span>A case report is one person's story, written up by their doctor and published — the lowest rung of the evidence ladder. They're how rare harms get spotted: MT2's priapism cases and mole scares live in case reports, not trials. But one story can't tell you how common something is — it proves “possible,” not “likely.” Around MT2, with no modern trials at all, these single stories plus regulator warnings make up most of the safety file. That's less a tribute to the reports than an indictment of the missing research.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#9a341222"/><path d="M6 24c4-8 10-12 18-12s14 4 18 12c-4 8-10 12-18 12S10 32 6 24z" fill="none" stroke="#129a44" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#129a44"/></svg><span class="term">Regulator warning</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A regulator warning is an official public alert from a health authority — the FDA, the UK's MHRA, Australia's TGA, and others — about an unapproved product's risks. Agencies have issued them specifically over injectable and nasal tanning products like Melanotan 2, citing unapproved status, unknown contents, and reported harms. These warnings don't carry the force of a ban on possession everywhere, but they are the authorities' formal “do not do this” notice. They exist because the gray market filled the vacuum that pharma's exit left. When multiple countries' regulators say the same thing independently, it is worth hearing.</p><div class="plain"><span class="plabel">Plain English</span>A regulator warning is the authorities' formal “do not do this” notice — a public alert from a health agency about an unapproved product's risks. Multiple agencies have issued them over injectable and nasal tanning products like MT2. They cite the same trio every time: unapproved, unknown contents, reported harms. A warning isn't a global ban, but when several countries' regulators independently say the same thing, it's worth listening. They exist because pharma walked away and the gray market moved in — which is why agencies keep issuing them over injectable and nasal tanning products.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#43140722"/><path d="M24 6v34M14 40h20M10 14h28M16 14l-6 14h12zM32 14l-6 14h12z" fill="none" stroke="#430711" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A placebo is an inactive control used in trials to subtract expectation from measurement. Tanning is an unusual case: expectation cannot fake melanin — pigment either appears or it doesn't — which is why MT2's core claim (it darkens skin) is unusually robust for a gray-market drug. You can't placebo your way to actual pigment. But placebo is very relevant to how people feel on it: energy, confidence, libido, and “glow” are exactly the subjective outcomes expectation moves most. Separating the demonstrated tan from the felt effects is the honest way to read MT2's reputation.</p><div class="plain"><span class="plabel">Plain English</span>A placebo is the inactive stand-in trials use to measure what expectation alone can do. Here's the twist with MT2: you can't placebo your way to actual pigment — the tan either shows up or it doesn't, which makes the core claim unusually solid for a gray-market drug. But everything people feel on it — energy, confidence, libido — is exactly the territory where expectation runs the show. So split the reputation in two: the tan is real pharmacology, and the vibes need a much more skeptical eye. Less relevant to whether it tans; very relevant to how people feel on it.</div></div></div>
   </div>
 </section>
-<section class="chapter" id="ch9">
-  <span class="eyebrow"><span class="n">09</span>Takeaways</span>
+<mini-poll slug="melanotan2-mini-ch8"
+  data-question="Melanocortin vocabulary — did the glossary clear things up?"
+  data-answers='[["💡", "Crystal clear"], ["🙂", "Mostly clear"], ["🤔", "Still fuzzy"], ["⏭️", "Skipped it"]]'>
+</mini-poll>
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Nine chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
+  <p class="lede">Eleven chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
   <div class="take-grid">
 <div class="take reveal"><div class="tk">🎨</div><h4>It tans — genuinely</h4><p>Old human studies confirm <strong>real pigmentation</strong> without sun. The core claim is the least disputed on this site.</p></div>
 <div class="take reveal"><div class="tk">🔑</div><h4>A skeleton key drug</h4><p>One peptide, <strong>four receptors</strong>: pigment, appetite, arousal, and more — effects and side effects bundled together.</p></div>
@@ -828,6 +1105,8 @@ mini-poll { display: block; }
 <div class="take reveal"><div class="tk">💬</div><h4>Forums ≠ data</h4><p>Fifteen years of anecdotes confirm the tan and <strong>prove nothing</strong> about long-term safety.</p></div>
 <div class="take reveal"><div class="tk">❓</div><h4>The melanoma question</h4><p>Stimulating pigment cells without long-term studies leaves the <strong>biggest question unanswerable</strong> — by design of the gray market.</p></div>
 <div class="take reveal"><div class="tk">🔭</div><h4>What would change the story</h4><p><strong>Real trials and a real approval</strong> — for cosmetic tanning, essentially inconceivable given the harm tolerance is near zero.</p></div>
+<div class="take reveal"><div class="tk">🧭</div><h4>Benefits, honestly tiered</h4><p><strong>Tanning is the one demonstrated effect</strong>; everything else is predicted or forum stories — never presented as equals.</p></div>
+<div class="take reveal"><div class="tk">🧍</div><h4>Fit &amp; caution</h4><p><strong>No approved use for anyone</strong> — and mole history, &quot;safe tan&quot; hopes, and heart concerns are the clearest caution flags.</p></div>
   </div>
   <div class="limits reveal">
     <h3>What this page does not do</h3>
@@ -838,7 +1117,8 @@ mini-poll { display: block; }
     </ul>
   </div>
 </section>
-<mini-poll slug="melanotan2-mini-ch8"
+<div class="ratehead reveal"><h3>⭐ Rate this infographic</h3><p>One tap — it helps shape the next one.</p></div>
+<mini-poll slug="melanotan2-mini-ch9"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "⭐⭐⭐⭐⭐ · Loved it"], ["🙂", "⭐⭐⭐⭐ · Good stuff"], ["😐", "⭐⭐⭐ · It’s okay"]]'>
 </mini-poll>
@@ -882,7 +1162,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#fbbf24","#9a3412","#431407","#fbbf24","#9a3412","#fbbf24"];
+  var colors=["#f9264a","#129a44","#430711","#f9264a","#129a44","#f9264a"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -966,7 +1246,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -1009,7 +1289,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#fbbf24","#fbbf24","#9a3412","#ffdb3f","#edf0f9"],parts=[];
+  var cols=["#f9264a","#f9264a","#129a44","#fa4463","#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -1045,12 +1325,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#fbbf24", "#9a3412", "#431407", "#64211b", "#f8950f", "#7c441c", "#fdd162", "#2b0d04", "#9a3412"] };
+  accents: ["#f9264a", "#129a44", "#430711", "#641b27", "#0ff864", "#1c7c3f", "#fb647e", "#2b040b", "#129a44"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="reta-mini-ch1"
+     <mini-poll slug="melanotan2-mini-recap"
        data-question="Had you heard of this topic before today?"
        data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
      </mini-poll>
@@ -1129,8 +1409,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fbbf24', '#fbbf24', '#9a3412', '#a78bfa', '#fbbf24',
-                 '#fbbf24', '#ffdb3f', '#ffb15d', '#22d3ee'];
+                ['#f9264a', '#f9264a', '#129a44', '#a78bfa', '#f9264a',
+                 '#f9264a', '#fa4463', '#61fb99', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
@@ -1479,6 +1759,9 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
   window.MiniPoll = { version: '1.5.1' };
 })();
 
+</script>
+<script>
+(function(){if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.querySelectorAll("svg").forEach(function(s){try{if(s.pauseAnimations)s.pauseAnimations();}catch(e){}});}})();
 </script>
 </body>
 </html>
